@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #252B42;}
+
+  canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+  align-items: c;}
+
+canvas {align-items: c;margin: auto;}
+
+h1 {
+    text-align: center;
+    color:white;
+    font-family: 'Poppins', sans-serif;
+}
+
+h4 {
+    text-align: center;
+    color:white;
+    font-size: small;
+    color: #23A6F0;
+    font-family: 'Poppins', sans-serif;
+}
+
+h5{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.select{
+    display: block;
+    padding: 1em;
+    text-align: center;
+    width: 20em;
+}
+.form-select{
+    background-color: #252B42;
+    color: #23A6F0;
+    font-family: 'Poppins', sans-serif;
+    padding: 0.5em 2em;
+    border-color: #23A6F0;
+    text-align: left;
+    background-image: url(https://cdn-icons-png.flaticon.com/512/226/226172.png);
+}
+
+
+
+#branch{
+    margin:2em 0 0 0;
+}
+
+
+#take_attendance{
+    display: block;
+    margin: 1em auto;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 25px;
+    height: 50px;
+    width: 200px;
+    font-size: 1.05rem;
+    background: linear-gradient(40deg, #23A6F0,#7873f5);
+}
+
+#imageUpload{
+    display: block;
+    margin: 1em auto;
+    text-align: center;
+}
+
+.file {
+    opacity: 0;
+    width: 0.1px;
+    height: 0.1px;
+    position: absolute;
+  }
+  
+  .file-input label {
+    font-family: 'Poppins', sans-serif;
+    margin:1.5em;  
+    display: block;
+    position: relative;
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    background: linear-gradient(40deg, #23A6F0,#7873f5);
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: medium;
+    cursor: pointer;
+    transition: transform .2s ease-out;
+  }
+  
+  .file-name {
+    font-family: 'Poppins', sans-serif;
+
+    position: absolute;
+    bottom: -35px;
+    left: 10px;
+    font-size: 0.85rem;
+    color: #555;
+  }
+  
+  input:hover + label,
+  input:focus + label {
+    transform: scale(1.02);
+  }
+  
+  /* Adding an outline to the label on focus */
+  input:focus + label {
+    outline: 1px solid #000;
+    outline: -webkit-focus-ring-color auto 2px;
+  }
+
+  .loader{ 
+    margin: 0 0 2em;
+    height: 100px;
+    width: 20%;
+    text-align: center;
+    padding: 1em;
+    margin: 0 auto 1em;
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  /*
+    Set the color of the icon
+  */
+  svg path,
+  svg rect{
+    fill: #23A6F0;
+  }
+
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+} 

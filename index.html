@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="face-api.min.js"></script>
+    <script defer src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.js" integrity="sha256-siFczlgw4jULnUICcdm9gjQPZkw/YPDqhQ9+nAOScE4=" crossorigin="anonymous"></script>
+    <script lang="javascript" src="xlsx.full.min.js"></script>
+    <script lang="javascript" src="FileSaver.min.js"></script>   
+    <title>Attendance System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+<body>  
+    <h4>Welcome to</h4>
+    <h1> Attendance Monitoring <br> System</h1>
+    <div class="select">
+      <select class="form-select " id="branch" aria-label="Default select example">
+        <option selected>Select Branch</option>
+        <option value="CS">Computer Science Engineering</option>
+        <option value="EE">Electrical Engineering</option>
+        <option value="ME">Mechanical Engineering</option>
+      </select>
+        </div>
+        <div class="select">
+          <select class="form-select" id="semester" aria-label="Default select example">
+            <option selected>Select Semester</option>
+            <option value="I">I</option>
+            <option value="II">II</option>
+            <option value="III">III</option>
+            <option value="IV">IV</option>
+            <option value="V">V</option>
+            <option value="VI">VI</option>
+            <option value="VII">VII</option>
+            <option value="VIII">VIII</option>
+          </select>
+      </div>
+      
+      <div class="file-input">
+      <input type="file" id="file" class="file" accept="image/*">
+      <label for="file">Choose file</label>
+      </div>
+
+      <h5 id="Loading">Models Loading....</h2>
+        <!-- 6 -->
+<div class="loader loader--style6" title="5" id="loader"">
+  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 24 30" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+    <rect x="0" y="13" width="4" height="5" fill="#333">
+      <animate attributeName="height" attributeType="XML" values="5;21;5" begin="0s" dur="0.6s" repeatCount="indefinite" />
+      <animate attributeName="y" attributeType="XML" values="13; 5; 13" begin="0s" dur="0.6s" repeatCount="indefinite" />
+    </rect>
+    <rect x="10" y="13" width="4" height="5" fill="#333">
+      <animate attributeName="height" attributeType="XML" values="5;21;5" begin="0.15s" dur="0.6s" repeatCount="indefinite" />
+      <animate attributeName="y" attributeType="XML" values="13; 5; 13" begin="0.15s" dur="0.6s" repeatCount="indefinite" />
+    </rect>
+    <rect x="20" y="13" width="4" height="5" fill="#333">
+      <animate attributeName="height" attributeType="XML" values="5;21;5" begin="0.3s" dur="0.6s" repeatCount="indefinite" />
+      <animate attributeName="y" attributeType="XML" values="13; 5; 13" begin="0.3s" dur="0.6s" repeatCount="indefinite" />
+    </rect>
+  </svg>
+</div>
+<button id="take_attendance" type="button" class="btn btn-primary btn-lg">Download XLSX</button>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
+
